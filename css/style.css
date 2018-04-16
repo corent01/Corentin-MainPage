@@ -63,6 +63,15 @@ a {
     font-weight: 400;
 }
 
+@media all and (min-width:2200px) {
+    .container {
+        width: 1950px;
+        margin-left:;
+    }
+}
+
+
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -123,6 +132,18 @@ a {
                 color: red;
             }
 
+.nav .navbar-nav ul {
+    margin-top: 9px;
+}
+
+@media(max-width:768px){
+   li a .btn-hels-nav {
+        margin-right: 265px;
+    }
+
+}
+
+
 .btn-hels-nav {
     margin-top: -2% !important;
     border: 2px solid white !important;
@@ -139,21 +160,23 @@ a {
 }
 
 
-    .btn-hels-nav:hover {
-        background-color: red !important;
-        color: white !important;
-        border: 2px solid white !important;
-    }
+
+.btn-hels-nav:hover {
+    background-color: red !important;
+    color: white !important;
+    border: 2px solid white !important;
+}
 
 @media(max-width:768px) {
     .btn-hels-nav {
-        margin-right: 297px;
+        margin-right: 265px;
         left: 10px;
     }
 
     .brand-heading {
         border-top-width: 0px;
         margin-top: 28px;
+        width: 83%;
     }
 }
 
@@ -221,7 +244,7 @@ a {
         }
 
 .text-welcome {
-    margin-bottom: -9%;
+    /*margin-bottom: -9%;*/
     padding-top: 4%;
 }
 
@@ -575,70 +598,74 @@ img {
             opacity: 1;
         }
 
-.gallery2 ul {
-    margin: 0;
+.gallery2 {
+    margin-right: 42px;
 }
 
-.gallery2 img {
-    max-width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-}
-
-.gallery2 ul li {
-    margin: 0;
-    position: relative;
-    list-style: none;
-    float: left;
-    padding: 0;
-}
-
-    .gallery2 ul li a {
-        position: relative;
-        width: 100%;
-        height: 100%;
+    .gallery2 ul {
         margin: 0;
-        padding: 0;
-        line-height: 0;
     }
 
-        .gallery2 ul li a:before {
-            position: absolute;
-            width: 32px;
-            height: 32px;
-            top: 40%;
-            left: 50%;
-            margin: -14px 0 0 -16px;
-            content: "";
-            opacity: 0;
-            z-index: 1;
-            -webkit-transition: all 0.3s linear;
-            -moz-transition: all 0.3s linear;
-            transition: all 0.3s linear;
-        }
+    .gallery2 img {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
 
-        .gallery2 ul li a:hover:before {
-            top: 50%;
-            opacity: 1;
-        }
+    .gallery2 ul li {
+        margin: 0;
+        position: relative;
+        list-style: none;
+        float: left;
+        padding: 0;
+    }
 
-        .gallery2 ul li a:after {
-            position: absolute;
+        .gallery2 ul li a {
+            position: relative;
             width: 100%;
-            top: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.3);
-            content: "";
-            opacity: 0;
-            -webkit-transition: all 0.3s linear;
-            -moz-transition: all 0.3s linear;
-            transition: all 0.3s linear;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 0;
         }
 
-        .gallery2 ul li a:hover:after {
-            opacity: 1;
-        }
+            .gallery2 ul li a:before {
+                position: absolute;
+                width: 32px;
+                height: 32px;
+                top: 40%;
+                left: 50%;
+                margin: -14px 0 0 -16px;
+                content: "";
+                opacity: 0;
+                z-index: 1;
+                -webkit-transition: all 0.3s linear;
+                -moz-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+            }
+
+            .gallery2 ul li a:hover:before {
+                top: 50%;
+                opacity: 1;
+            }
+
+            .gallery2 ul li a:after {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.3);
+                content: "";
+                opacity: 0;
+                -webkit-transition: all 0.3s linear;
+                -moz-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+            }
+
+            .gallery2 ul li a:hover:after {
+                opacity: 1;
+            }
 
 section:after {
     float: none;
@@ -659,12 +686,17 @@ section {
     display: none;
 }
 
+
+
 #formco {
     padding-left: 24px;
     padding-right: 24px;
 }
 
-
+#contactform {
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
 .error input, input.error, .error textarea, textarea.error {
     background-color: #ffffff;
