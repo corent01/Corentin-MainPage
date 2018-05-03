@@ -746,3 +746,63 @@ section {
 .about {
     padding-bottom: 50px !important;
 }
+
+.test {
+    position: relative;
+    width: 50%;
+}
+
+.imagebadg img {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease;
+    background-color: #f9f9f9;
+}
+
+.test:hover .overlay {
+    opacity: 1;
+    background-color: #f9f9f9;
+}
+
+.imagebadg:hover {
+    display: none;
+}
+
+li {
+    list-style:none;
+}
+
+#badge {
+    margin-left: 94px;
+}
+
+.badg {
+    margin-left: 60px !important;
+    border: 1px solid gray;
+    width: 150%;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+@media(min-width:749px) {
+    #badge {
+        
+    }
+}
