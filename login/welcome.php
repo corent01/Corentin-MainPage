@@ -113,17 +113,6 @@ if(!$_SESSION['name'])
                         <img class="imgDrone" src="../img/justunchocolat.bemobile.png" alt="Just'un Chocolat">
                     </a>
                 </li>
-				<!--<li class="col-4">
-                    <a class="image" href="">
-                        <img class="imgDrone" src="" alt="">
-                    </a>
-                </li>
-				<li class="col-4">
-                    <a class="image" href="">
-                        <img class="imgDrone" src="" alt="">
-                    </a>
-                </li>-->
-
 			</ul>
 			</div>
         </div>
